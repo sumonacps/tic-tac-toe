@@ -1,0 +1,47 @@
+//Database creation
+CREATE DATABASE tictactoeAPP;
+//USE DATABASE tictactoeApp;
+//Table creation
+CREATE TABLE USERS(
+id int,
+name varchar(100),
+email varchar(100),
+phoneNumber varchar(20),
+password varchar(100)
+);
+//Data insertion 
+INSERT INTO USERS(id,name,email,phoneNumber,password)
+values(1,'Rahim','rahim@gmail.com','01721720456','rahim1233');
+
+INSERT INTO USERS(id,name,email,phoneNumber,password)
+values(2,'Fahim','fahim@gmail.com','01721720456','fahim1233');
+
+INSERT INTO USERS(id,name,email,phoneNumber,password)
+values(3,'Karim','kaim@gmail.com','01721720456','kaim1233');
+
+INSERT INTO USERS(id,name,email,phoneNumber,password)
+values(4,'Hakim','hakim@gmail.com','01721720456','haim1233');
+
+INSERT INTO USERS(id,name,email,phoneNumber,password)
+values(5,'Ramim','ramim@gmail.com','01721720456','ramim1233');
+
+INSERT INTO USERS(id,name,email,phoneNumber,password)
+values(6,'Rahim Uddin','rahim uddin@gmail.com','01721720456','rahimuddin1233');
+
+//Find user by email and password
+SELECT *FROM USERS
+WHERE email= 'userEmail' and password ='userPassword'
+
+//Find All users
+SELECT *from Users;
+//User updation 
+UPDATE USERS
+SET name= 'Rahim Mia'
+WHERE email= 'rahim@gmail.com'
+
+//User Deletion
+DELET USERS
+WHERE email='rahim@gmail.com'
+
+
+
